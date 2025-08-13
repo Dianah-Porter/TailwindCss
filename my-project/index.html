@@ -7,7 +7,14 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1 class="text-yellow-600 text-3xl font-bold text-center">Tailwind CSS Learning </h1>
+    <nav class="bg-slate-800 p-4 flex justify-evenly text-white font-bold w-full fixed  top-0 ">
+      <a href="" class="hover:bg-slate-900 p-3 rounded">Home</a>
+      <a href="" class="hover:bg-slate-900 p-3 rounded">Team</a>
+      <a href="" class="hover:bg-slate-900 p-3 rounded">Projects</a>
+      <a href="" class="hover:bg-slate-900 p-3 rounded">Reports</a>
+    </nav>
+
+    <h1 class="text-yellow-600 text-3xl font-bold text-center  mt-32">Tailwind CSS Learning </h1>
     <button class="rounded-2xl px-3 py-3 my-4 bg-violet-500 hover:bg-violet-600 focus:outline-2  active:bg-violet-700 flex mx-auto focus:bg-slate-600">Click me!</button>
 
     <div class="bg-blue-800 flex gap-x-4 mx-auto items-center w-80 text-center rounded-xl p-6 shadow-lg outline outline-black/50 pb-11" >
@@ -27,6 +34,45 @@
     <button class="text-violet-900 flex flex-col bg-white outline outline-black/10 rounded-2xl px-2 py-1 hover:bg-violet-700 hover:text-white active:bg-violet-500 focus:bg-violet-400">Message</button>
     </div>
   </div>
+<!-- making grids using tailwind -->
+ <h1 class="font-bold flex justify-center mb-4 text-blue-700 hover:underline p-6 text-3xl ">Grids</h1>
+  <div class="mx-auto grid sm:grid-cols-3 gap-y-4 mt-5 max-w-3xl mb-7 grid-cols-2 border rounded-xl shadow-lg p-6 ">
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">01</div>
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">02</div>
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">03</div>
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">04</div>
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">05</div>
+    <div class="bg-blue-700 h-12 w-32 text-white flex justify-center items-center rounded-xl">06</div>
+  </div>
+<h1 class="font-bold flex justify-center mb-4 hover:underline text-3xl">Darkmode</h1>
+ <div class="bg-white mx-auto w-56 dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg">
+  <p>Writes upside-down</p>
+</div>
+
+<div class="flex flex-col justify-center mx-auto w-96 border p-6 rounded-xl mt-8">
+  <div class="flex gap-x-3 py-3">
+    <h4 class="font-bold text-2xl ">Contributors</h4>
+    <span class="border px-2 rounded-xl">204</span>
+  </div >
+
+  <div class="flex -space-x-2 overflow-hidden ">
+    <img class="h-12 w-12 rounded-full ring-2 ring-white" src="/images/p2.jpg" alt="pic">
+    <img class="h-12 w-12 rounded-full ring-2 ring-white" src="/images/p3.jpg" alt="pic">
+    <img class="h-12 w-12 rounded-full ring-2 ring-white" src="/images/p4.jpg" alt="pic">
+    <img class="h-12 w-12 rounded-full ring-2 ring-white" src="/images/p5.jpg" alt="pic">
+    <img class="h-12 w-12 rounded-full ring-2 ring-white" src="/images/p6.jpeg" alt="pic">
+    
+  </div>
+  <div class="font-medium">
+    <a href="" class="text-blue-800">198 others</a>
+  </div>
+</div>
+<script>
+  const Contributors =[
+  { avatarUrl : '/images/p2.jpg', handle: 'User2'},
+  { avatarUrl:  '/images/p3.jpg', handle: 'User3'}
+  ];
+</script>
 
     <script type="module" src="/src/main.js"></script>
   </body>
